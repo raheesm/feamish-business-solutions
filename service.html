@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+  <header>
+    <nav
+      class="navbar navbar-expand-lg navbar-inner navbar-light bg-white inner-nav fixed-top"
+    >
+    <div class="top-header ">
+      <div class="container">
+        <div class="top-nav-left">
+          <div class="social-box" style="z-index: 999;">
+            <ul  class="list-unstyled">
+              <li><a href="twitter.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg version="1.1" id="Layer_1" width="16" height="16" fill="currentColor" viewBox="0 0 310 310"
+                    style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                    <g id="XMLID_834_">
+                      <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+             c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+             V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+             C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+             c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+      
+                  </svg>
+                </a></li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-group">
+      <a class="btn-switch active-country rounded" href="#">UAE</a><a class="btn-switch rounded" href="../oman/" >OMAN</a>
+        </div>
+      </div>
+   </div>
+      <div class="container-lg">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            sizes="(max-width: 300px) 100vw, 300px"
+            srcset="
+              assets/images/logo-mobile.png 200w,
+              assets/images/logo-desk.png   300w
+            "
+            src="assets/images/logo-desk.png"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Clients</a>
+            </li>
+
+            <li class="nav-item dropdown d-none">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Services</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li class="dropend">
+                  <a
+                    href="#"
+                    class="dropdown-item dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >Company Formation</a
+                  >
+                  <ul class="dropdown-menu shadow">
+                    <li>
+                      <a class="dropdown-item" href="service.html">
+                        Free Zone</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html">
+                        Mainland</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="service.html">
+                    Investor Visa</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="service.html">
+                    Pro Services
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="service.html"
+                    >Office Space</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="service.html"
+                    >Accounting Services</a
+                  >
+                </li>
+                <li class="dropend">
+                  <a
+                    href="#"
+                    class="dropdown-item dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    >Other Services</a
+                  >
+                  <ul class="dropdown-menu shadow">
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Share Transfer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Company Liquidation</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Bank Account Opening Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Manpower Related Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Visa Consulting</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-mega position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Services</a
+              >
+              <div class="dropdown-menu shadow mt-lg-5">
+                <div class="mega-content px-4">
+                  <div class="container-fluid">
+                    <div class="mega-menu-row">
+                      <div class="meg-item-box py-lg-4 py-3">
+                        <h5>Company Formation</h5>
+                        <ul class="list-unstyled meg-list">
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Mainland</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Free zone</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="meg-item-box py-lg-4 py-3">
+                        <h5>PRO Services</h5>
+                        <ul class="list-unstyled meg-list">
+                          <!-- <img src="assets/images/uae-map.jpg" class="w-50" alt=""> -->
+                          <li>
+                            <a class="list-group-item" href="service.html">
+                              Visa applications</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html">
+                              Labour cards</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html">
+                              Company trade licencing</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="meg-item-box py-lg-4 py-3">
+                        <h5>Office Space</h5>
+                        <!-- <h6>UAE</h6> -->
+                        <!-- <ul class="meg-inner-list"> -->
+                        <ul class="list-unstyled meg-list">
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Virtual Office</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Business Centers</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Dedicated Office</a
+                            >
+                          </li>
+                        </ul>
+                        <!-- <h6>Oman</h6>
+                          <ul class="meg-inner-list">
+                            <li><a class="list-group-item" href="#">Dedicated Office</a></li>
+                              <li><a class="list-group-item" href="#">Business Centers</a></li>
+                          </ul> -->
+                      </div>
+                      <div class="meg-item-box py-lg-4 py-3">
+                        <h5>Visa</h5>
+                        <!-- <h6>Oman</h6>
+                          <ul class="meg-inner-list">
+                              <li><a class="list-group-item" href="#">Longterm</a></li>
+                              <li><a class="list-group-item" href="#">Investor</a></li>
+                              <li><a class="list-group-item" href="#">Tourist Vi</a></li>
+                          </ul> -->
+                        <!-- <h6>Dubai</h6> -->
+                        <!-- <ul class="meg-inner-list"> -->
+                        <ul class="list-unstyled meg-list">
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Longterm Visa</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Investor Visa</a
+                            >
+                          </li>
+                          <li>
+                            <a class="list-group-item" href="service.html"
+                              >Tourist Visa</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="meg-item-box py-lg-4 py-3">
+                        <h5>Other Services</h5>
+                        <ul class="list-unstyled meg-list">
+                          <li>
+                            <a class="" href="service.html">Share Transfer</a>
+                          </li>
+                          <li>
+                            <a class="" href="service.html"
+                              >Company Liquidation</a
+                            >
+                          </li>
+                          <li>
+                            <a class="" href="service.html"
+                              >Bank Account Opening Support</a
+                            >
+                          </li>
+                          <li>
+                            <a class="" href="service.html"
+                              >Manpower Related Support</a
+                            >
+                          </li>
+                          <li>
+                            <a class="" href="service.html"
+                              >Visa Consulting</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <button class="btn btn-primary nav-btn rounded-pill">Check Now!</button> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <!-- page banner section -->
+
+      <section id="page-banner-sec">
+          <div class="container">
+              <div class="page-banner-div">
+                  <h1>Company Formation in UAE</h1>
+              </div>
+          </div>
+      </section>
+
+      <!-- page banner section end -->
+
+      
+	<!-- service wrapper sec -->
+
+	<section id="service-wrapper-sec">
+		<div class="container">
+			<div class="service-wrapper-div">
+				<div class="service-content-box">
+                    <h1 class="service-title">
+						Company Formation
+					</h1>
+					<img src="assets/images/service-demo-img.jpg" class="service-main-img" alt="service">
+					
+					<p class="service-main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, asperiores vitae vero saepe provident esse eveniet odio cum quae animi libero assumenda quibusdam beatae nisi. Nihil repellendus nesciunt perferendis!
+					Modi similique tenetur, tempore illo veritatis, eum delectus enim quis vero quaerat saepe officiis velit quam fuga in maiores natus quo exercitationem consectetur labore excepturi consequatur accusamus. Iure, reiciendis facilis!
+					<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur inventore nostrum cumque debitis reprehenderit amet! Sit maiores minima nihil nesciunt animi ab provident culpa.Expedita atque provident doloremque et quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus tempora quidem, illo sint ut, esse vitae error, nisi maxime mollitia adipisci doloremque porro. Iure voluptatibus rerum alias dolore incidunt!
+          Iure facere nobis quis fuga mollitia odio itaque sint cum eos vero dolor minus iusto molestiae aspernatur, debitis delectus aliquam praesentium asperiores aut ipsa? Odio recusandae laborum ab rerum soluta!</p>
+                   
+				</div>
+
+				<div class="service-sidebar-box">
+					<h2>Services</h2>
+					<ul class="list-unstyled">
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Business Setup</a></li>
+						<li><a href="#">Virtual Office</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Business Setup</a></li>
+						<li><a href="#">Virtual Office</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Business Setup</a></li>
+						<li><a href="#">Virtual Office</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Company Formation</a></li>
+						<li><a href="#">Business Setup</a></li>
+						<li><a href="#">Virtual Office</a></li>
+						<li><a href="#">Company Formation</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- service wrapper sec end -->
+
+    <!-- lite bg box -->
+
+    <section id="content-box-sec" class="bg-lit">
+        <div class="container">
+            <div class="content-box-div">
+                <div class="content-div">
+                    <h1>COMPANY FORMATION CONSULTANTS</h1>
+                    <p>As a trade hub, Dubai is expanding at a faster pace. Much awaited Expo in 2020 is expected to create thousands of new trendy jobs. With its growing economy, flexible laws, and significant transformation, apart from enticing operative conditions, top-notch infrastructure, strategic location, and economic stability, Dubai becomes investors favourite place. While thinking of new company formation in Dubai, we are here just a call away for every need from startup to promote, endorse, develop, and grow your company.RAG Business Group LLC offers a team of experienced and leading business setup services in Dubai specializing in all the procedures and requirements of company setup. You just need to have an idea, a clear vision of your venture. RAG Business Group LLC will make its way to take care of the rest.</p>
+                </div>
+                <div class="img-div">
+                    <img src="assets/images/img-service1.jpg" alt="service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lite bg box -->
+
+    <!-- random content container -->
+    <div id="random-content-sec">
+        <div class="container">
+            <h2>Planning On A Company Formation ?</h2>
+            <p>In the United Arab Emirates, Dubai provides magnificent infrastructure, intense and quick growing horizons, to be the biggest business hubs in the world. With the best business strategies and different types of company formations, Dubai invites aspiring business people around the globe.
+
+                Dubai government rules and regulations on a business set up by a foreign investor require more government and legal procedures. For this, an expert in this field must accompany all kinds of business set up procedures.
+                
+                We are the leading company formation consultants in Dubai to provide reliable and timely services on every kind of company formation needs. Our expert team of liaisons will take you close to all the legal and formal authorities to get the documents cleared which are essential for the smooth functioning of the business.
+                
+                UAE offers a vast opportunity to form different kinds of companies in the UAE. A thorough study on the possibilities and scope raised by each type of company will give an idea about various types of companies. Our business company formation consultants in Dubai extends end to end service for any requirements related to company formation in Dubai</p>
+                <ol>
+                    <li>UAE Free Zone Company Formation</li>
+                    <li>UAE Mainland Company Formation</li>
+                    <li>UAE Off-Shore Company Formation</li>
+                    <li>UAE On-Shore Company Formation</li>
+                </ol>
+        </div>
+    </div>
+    <!-- random content container end -->
+
+
+
+  </main>
+ <!-- footer -->
+
+    <footer class="text-white" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-5">
+        <!-- footer top -->
+
+        <div class="footer-top">
+          <div class="box">
+            <img src="assets/images/logo-mobile.png" class="footer-logo" alt="logo">
+            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem quos impedit quam, sapiente quisquam consequuntur repellendus voluptas ducimus id, distinctio provident atque vel error, possimus non praesentium suscipit beatae!</p>
+          </div>
+          <div class="box">
+            <h2>Usefull Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Contact Us</h2>
+            <ul>
+              <li><a href="mailto:feamish@gmail.com"><i></i>feamish@gmail.com</a></li>
+              <li><a href="mailto:feamish@gmail.com"><i></i>info@feamish.com</a></li>
+              <li><a href="#"><i></i>9155587746</a></li>
+              <li><a href="#"><i></i>9155587746</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Address</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit corporis vel quaerat maxime. Quidem maxime veritatis, </p>
+          <a href="#" class="btn btn-small btn-primary">Request Quote</a>
+          </div>
+        </div>
+        <hr style="background-color: #000">
+        <!-- footer top end -->
+        <!-- Section: Social media -->
+        <section class="footer-social mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><svg version="1.1" width="16" height="16" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+         <g id="XMLID_834_">
+           <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+             c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+             V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+             C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+             c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+         </g></svg></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a>
+    
+         
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://feamish.com/">feamish.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+	</script>
+	
+
+</body>
+
+</html>
